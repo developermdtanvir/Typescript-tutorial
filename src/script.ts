@@ -1,36 +1,18 @@
-//normal variable 
-let b : string | number;
+//It is a not suggest for type script becouse thats way typescript not butifull thats way we are uses for javascript
 
-//array
-let array : (string | number)[];
+let a : any[] = [];
 
-b = 27
-b = 'Tanvir'
+a.push('Tanvir')
+a.push(34)
 
-array = ['Tanvir','shakib',27]
+let b : {
+    name:any,
 
-array.push('Tanvir',27)
-
-// object 
-
-let objects : {
-
-    name:string,
-
-    roll:number,
-
-    student:boolean
-
+    age:any
 }
 
-objects = {
-
+b = {
     name:"Tanvir",
 
-    roll:127,
-
-    student:true
-    
+    age:"Twintty Three"
 }
-
-console.log(objects.name)

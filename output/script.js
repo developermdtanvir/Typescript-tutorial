@@ -1,17 +1,10 @@
 "use strict";
-//normal variable 
+//It is a not suggest for type script becouse thats way typescript not butifull thats way we are uses for javascript
+let a = [];
+a.push('Tanvir');
+a.push(34);
 let b;
-//array
-let array;
-b = 27;
-b = 'Tanvir';
-array = ['Tanvir', 'shakib', 27];
-array.push('Tanvir', 27);
-// object 
-let objects;
-objects = {
+b = {
     name: "Tanvir",
-    roll: 127,
-    student: true
+    age: "Twintty Three"
 };
-console.log(objects.name);
