@@ -1,23 +1,16 @@
-// let myFunc : Function;
+type stringOrNum = string | number;
+type userType = {name : string,age : number}
 
-// myFunc = (a : string, b : string , c? : string)  =>{
-//     console.log(`my Name is ${a} and i am a ${b}`);
-// }
 
-// typescript: void vs javascript:  undefined  : - interview question
-
-// void mens now value 
-//undefiend is value
-
-//default value pass :-
-const myFunc = (a : string, b : string , c : string = 'true')  =>{
-    console.log(c);
-    console.log(`my Name is ${a} and i am a ${b}`);
-    return a + b ;
+const userDetails = (id : stringOrNum, user : userType) => { 
+    console.log(`User id is ${id} , name is ${user.name} age is ${user.age}`)
 }
 
-myFunc('Tanvir','student','false');
+const sayHello = (user: userType) =>{
+    console.log(`hello ${user.age >50 ? 'Sir':'Mr'} ${user.name}`)
+}
 
-//const myFunc: (a: string, b: string, c?: string) => void this mens i am not return 
-
-// const myFunc: (a: string, b: string, c?: string) => string 
+sayHello({
+    name:'Tanvir',
+    age:51
+})
