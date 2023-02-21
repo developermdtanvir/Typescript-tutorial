@@ -1,15 +1,5 @@
-class Player {
+import Player from "./classes/Player/Player.js"
 
-    constructor( 
-        protected  name:string,
-
-        readonly  age:number,
-      
-        private  country:string){}
-    play(){
-        console.log(`${this.name} from ${this.country} age ${this.age}`)
-    }
-}
 
 
 const shakib = new Player('Shakib',43,'Bangladesh')
