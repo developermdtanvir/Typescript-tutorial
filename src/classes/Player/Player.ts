@@ -1,11 +1,12 @@
-export default class Player {
+import { isPlayer } from "../../interfaces/isPlayer.js"
+export default class Player implements isPlayer {
 
     constructor( 
-        protected  name:string,
+        public  name:string,
 
         readonly  age:number,
       
-        private  country:string){}
+        public  country:string){}
     play(){
         console.log(`${this.name} from ${this.country} age ${this.age}`)
     }
