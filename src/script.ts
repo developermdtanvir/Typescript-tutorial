@@ -1,43 +1,36 @@
-// const multiplay = (num1 : number, num2 : number) =>{
-//     return num1 * num2;
-// }
+//normal variable 
+let b : string | number;
 
-// console.log(multiplay(20,10))
+//array
+let array : (string | number)[];
 
-/*
-let frutis : string[]
+b = 27
+b = 'Tanvir'
 
-frutis =  ['apple','banana','orange'];
+array = ['Tanvir','shakib',27]
 
-frutis.push('piplines');
+array.push('Tanvir',27)
 
-console.log(frutis);
-*/
+// object 
 
-/*
-let mixed: (string | number | boolean )[]
+let objects : {
 
-mixed = ['Tanvir',true,30];
-
-mixed.push('Shakib');
-
-mixed.push({name : 'Tanvir' }) error: Argument of type '{ name: string; }' is not assignable to parameter of type 'string | number | boolean
-
-console.log(mixed);
-
-*/
-
-/*let person : {
     name:string,
-    captin: boolean,
-    age:number
+
+    roll:number,
+
+    student:boolean
+
 }
 
-person = {
-    name:"Shakib",
+objects = {
 
-    captin:true,
+    name:"Tanvir",
 
-    age:35
+    roll:127,
+
+    student:true
+    
 }
-*/
+
+console.log(objects.name)
