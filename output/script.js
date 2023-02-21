@@ -1,11 +1,14 @@
 "use strict";
-const userDetails = (id, user) => {
-    console.log(`User id is ${id} , name is ${user.name} age is ${user.age}`);
+/*
+let add : (x : number, y : number) => number;
+
+add = (a : number, b : number) => {
+    return a + b;
+}
+
+console.log(add(20,20))
+
+*/
+let userDetails;
+userDetails = (id, userInfo) => {
 };
-const sayHello = (user) => {
-    console.log(`hello ${user.age > 50 ? 'Sir' : 'Mr'} ${user.name}`);
-};
-sayHello({
-    name: 'Tanvir',
-    age: 51
-});

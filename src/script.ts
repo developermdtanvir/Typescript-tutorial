@@ -1,16 +1,34 @@
-type stringOrNum = string | number;
-type userType = {name : string,age : number}
+/*
+let add : (x : number, y : number) => number;
 
-
-const userDetails = (id : stringOrNum, user : userType) => { 
-    console.log(`User id is ${id} , name is ${user.name} age is ${user.age}`)
+add = (a : number, b : number) => {
+    return a + b;
 }
 
-const sayHello = (user: userType) =>{
-    console.log(`hello ${user.age >50 ? 'Sir':'Mr'} ${user.name}`)
+console.log(add(20,20))
+
+*/
+
+/* let calculation : (x : number, y : number , z : string) => number;
+
+calculation = (a : number, b : number, c : string) =>{
+    if(c === 'add'){
+        return a + b;
+    }
+    
+    else{
+        return a - b;
+    }
 }
 
-sayHello({
-    name:'Tanvir',
-    age:51
-})
+console.log(calculation(20,10,'minus'))
+
+*/
+
+type userInfo =  { name: string , age: number}
+type id = number | string;
+
+let userDetails : (id :id, userInfo:userInfo ) => void;
+
+userDetails = (id : id , userInfo:userInfo) =>{
+}
