@@ -1,10 +1,17 @@
 "use strict";
-//It is a not suggest for type script becouse thats way typescript not butifull thats way we are uses for javascript
-let a = [];
-a.push('Tanvir');
-a.push(34);
-let b;
-b = {
-    name: "Tanvir",
-    age: "Twintty Three"
+// let myFunc : Function;
+// myFunc = (a : string, b : string , c? : string)  =>{
+//     console.log(`my Name is ${a} and i am a ${b}`);
+// }
+// typescript: void vs javascript:  undefined  : - interview question
+// void mens now value 
+//undefiend is value
+//default value pass :-
+const myFunc = (a, b, c = 'true') => {
+    console.log(c);
+    console.log(`my Name is ${a} and i am a ${b}`);
+    return a + b;
 };
+myFunc('Tanvir', 'student', 'false');
+//const myFunc: (a: string, b: string, c?: string) => void this mens i am not return 
+// const myFunc: (a: string, b: string, c?: string) => string 

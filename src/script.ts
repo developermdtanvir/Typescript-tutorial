@@ -1,18 +1,23 @@
-//It is a not suggest for type script becouse thats way typescript not butifull thats way we are uses for javascript
+// let myFunc : Function;
 
-let a : any[] = [];
+// myFunc = (a : string, b : string , c? : string)  =>{
+//     console.log(`my Name is ${a} and i am a ${b}`);
+// }
 
-a.push('Tanvir')
-a.push(34)
+// typescript: void vs javascript:  undefined  : - interview question
 
-let b : {
-    name:any,
+// void mens now value 
+//undefiend is value
 
-    age:any
+//default value pass :-
+const myFunc = (a : string, b : string , c : string = 'true')  =>{
+    console.log(c);
+    console.log(`my Name is ${a} and i am a ${b}`);
+    return a + b ;
 }
 
-b = {
-    name:"Tanvir",
+myFunc('Tanvir','student','false');
 
-    age:"Twintty Three"
-}
+//const myFunc: (a: string, b: string, c?: string) => void this mens i am not return 
+
+// const myFunc: (a: string, b: string, c?: string) => string 
