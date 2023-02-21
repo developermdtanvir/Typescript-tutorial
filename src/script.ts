@@ -21,11 +21,13 @@ mixed = ['Tanvir',true,30];
 
 mixed.push('Shakib');
 
+mixed.push({name : 'Tanvir' }) error: Argument of type '{ name: string; }' is not assignable to parameter of type 'string | number | boolean
+
 console.log(mixed);
 
 */
 
-let person : {
+/*let person : {
     name:string,
     captin: boolean,
     age:number
@@ -38,3 +40,4 @@ person = {
 
     age:35
 }
+*/
