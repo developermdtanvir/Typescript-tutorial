@@ -1,19 +1,11 @@
 class Player {
-    name:string;
 
-    age:number;
+    constructor( 
+        protected  name:string,
 
-    country:string
-
-
-    constructor(n : string, a : number, c : string){
-
-        this.name = n,
-
-        this.age = a,
-
-        this.country = c
-    }
+        readonly  age:number,
+      
+        private  country:string){}
     play(){
         console.log(`${this.name} from ${this.country} age ${this.age}`)
     }
@@ -22,6 +14,9 @@ class Player {
 
 const shakib = new Player('Shakib',43,'Bangladesh')
 const Tamim = new Player('Tamim',43,'Bangladesh')
+
+console.log(shakib.age,'privet')
+
 shakib.play()
 
 const players : Player[] = []
@@ -33,13 +28,3 @@ console.log(players)
 
 
 
-// binary number before ob 
-let bin = 0b100010101010;
-let anotherBin: number = 0B010;
-
-// octal number before 0o
-let octal = 0o1012467;
-
-// haxadecimal before OXA
-
-let hexadecimal = 0XA2052ABCDEF;
