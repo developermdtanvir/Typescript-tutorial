@@ -1,34 +1,33 @@
-/*
-let add : (x : number, y : number) => number;
+class Player {
+    name:string;
 
-add = (a : number, b : number) => {
-    return a + b;
-}
+    age:number;
 
-console.log(add(20,20))
+    country:string
 
-*/
 
-/* let calculation : (x : number, y : number , z : string) => number;
+    constructor(n : string, a : number, c : string){
 
-calculation = (a : number, b : number, c : string) =>{
-    if(c === 'add'){
-        return a + b;
+        this.name = n,
+
+        this.age = a,
+
+        this.country = c
     }
-    
-    else{
-        return a - b;
+    play(){
+        console.log(`${this.name} from ${this.country} age ${this.age}`)
     }
 }
 
-console.log(calculation(20,10,'minus'))
 
-*/
+const shakib = new Player('Shakib',43,'Bangladesh')
+const Tamim = new Player('Tamim',43,'Bangladesh')
+shakib.play()
 
-type userInfo =  { name: string , age: number}
-type id = number | string;
+const players : Player[] = []
 
-let userDetails : (id :id, userInfo:userInfo ) => void;
+players.push(shakib);
+players.push(Tamim);
 
-userDetails = (id : id , userInfo:userInfo) =>{
-}
+console.log(players)
+
