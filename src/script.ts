@@ -9,8 +9,6 @@ shakib = new Player('Shakib',43,'Bangladesh')
 
 const Tamim = new Player('Tamim',43,'Bangladesh')
 
-console.log(shakib.age,'privet')
-
 shakib.play()
 
 const players : Player[] = []
