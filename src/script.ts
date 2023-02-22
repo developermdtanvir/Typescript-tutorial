@@ -13,21 +13,27 @@ let user = addId({
 
 // interface with Generic uses Example
 
+//enum 
+
+enum ResType {SUCCESS, FAILURE, UNAUTHENTICATED, FORBIDDEN };
+
 interface APIrefarance <T> {
     status: number,
-    type: string,
+    type: ResType,
     data:T
 }
 
 const Ransponse1 : APIrefarance <object> = {
     status:200,
-    type:"json type",
+    type:ResType.SUCCESS,
     data:{
         name:"Tanvir",
         age:30,
         id:20
     }
 }
+
+console.log(Ransponse1);
 
 
 
