@@ -1,30 +1,33 @@
-class Player {
+//Generic 
 
-    constructor( 
-        protected  name:string,
-
-        readonly  age:number,
-      
-        private  country:string){}
-    play(){
-        console.log(`${this.name} from ${this.country} age ${this.age}`)
-    }
+const addId =<T extends { name:string, age:number }> (obj:T) =>{
+    let id = Math.round(Math.random()*100);
+    return {...obj, id}
 }
 
+let user = addId({
+    name:"Tanvir",
+    age:40
+});
 
-const shakib = new Player('Shakib',43,'Bangladesh')
-const Tamim = new Player('Tamim',43,'Bangladesh')
 
-console.log(shakib.age,'privet')
+// interface with Generic uses Example
 
-shakib.play()
+interface APIrefarance <T> {
+    status: number,
+    type: string,
+    data:T
+}
 
-const players : Player[] = []
-
-players.push(shakib);
-players.push(Tamim);
-
-console.log(players)
+const Ransponse1 : APIrefarance <object> = {
+    status:200,
+    type:"json type",
+    data:{
+        name:"Tanvir",
+        age:30,
+        id:20
+    }
+}
 
 
 
