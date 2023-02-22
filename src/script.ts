@@ -1,39 +1,9 @@
-//Generic 
-
-const addId =<T extends { name:string, age:number }> (obj:T) =>{
-    let id = Math.round(Math.random()*100);
-    return {...obj, id}
-}
-
-let user = addId({
-    name:"Tanvir",
-    age:40
-});
+//TUPLES 
 
 
-// interface with Generic uses Example
+/*let a = [20,'hello',{t:'Tanvir'}];
 
-//enum 
+a[0] = 'Tanvir' */
 
-enum ResType {SUCCESS, FAILURE, UNAUTHENTICATED, FORBIDDEN };
-
-interface APIrefarance <T> {
-    status: number,
-    type: ResType,
-    data:T
-}
-
-const Ransponse1 : APIrefarance <object> = {
-    status:200,
-    type:ResType.SUCCESS,
-    data:{
-        name:"Tanvir",
-        age:30,
-        id:20
-    }
-}
-
-console.log(Ransponse1);
-
-
+let b:[number, string, object] = [20, 'Hello', {t: 'gello'}];
 
